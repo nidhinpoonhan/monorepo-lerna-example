@@ -1,5 +1,8 @@
 {
-  "packages": ["apps/*", "libs/*"],
+  "packages": [
+    "apps/*",
+    "libs/*"
+  ],
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
@@ -14,5 +17,12 @@
       "registry": "http://localhost:4873/",
       "verifyAccess": false
     }
+  },
+  "publish": {
+    "registry": "http://localhost:4873/",
+    "message": "chore(packages): release",
+    "conventionalCommits": true,
+    "npmClient": "npm",
+    "verifyAccess": false
   }
 }
